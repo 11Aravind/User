@@ -178,6 +178,15 @@ img {max-width: 100%;}
 
 
 /* faculty.html */
+.bottom-to-top{
+  width: 47px;
+  height: 30px;
+  position: fixed;
+  top: 599px;
+  right: 36px;
+  z-index: 100;
+}
+
 ul{
   list-style: none;
 
