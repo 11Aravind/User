@@ -1,0 +1,219 @@
+  /* common css  */
+  *{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  
+  }
+/* ex start  */
+
+
+
+
+.menus {
+    display: grid;
+    grid-template-rows: 40px max-content;
+    gap: 10px;
+  }
+  
+  .toggle {
+    all: unset;
+    background-color: dodgerblue;
+    color: white;
+    width: 150px;
+    padding: 10px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .toggle::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-width: 0 3px 3px 0;
+    border-style: solid;
+    transform: rotate(45deg);
+    transition: 0.4s;
+  }
+  
+  .list {
+    background-color: white;
+    color: #444;
+    list-style: none;
+    display: grid;
+    grid-template-rows: repeat(4, 40px);
+    border-radius: 5px;
+    overflow: hidden;
+    height: 0;
+    transition: 0.4s;
+  }
+  
+  .list-item {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.4s, transform 0.4s var(--delay);
+    transform: translateX(-100%);
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  .list-item:hover {
+    background-color: dodgerblue;
+    color: #fff;
+  }
+  
+  .toggle:focus::after {
+    transform: rotate(225deg);
+  }
+  
+  .toggle:focus ~ .list {
+    height: 160px;
+  }
+  
+  .toggle:focus ~ .list .list-item {
+    transform: translateX(0);
+  }
+  
+/* ex end  */
+  body{
+    padding: 0px 17px;
+  }
+  /* common css end  */
+  /* navbar.css */
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; */
+    width: 100%;
+    padding: 9px 0px;
+}
+.logo{
+    /* width: 25%; */
+    width: 33%;
+    display: flex;
+    align-items: center;
+}
+.logo>img{
+    padding-top: 9px;
+    padding-left: 4px;
+    width: 100%;
+}
+.logo-name-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.college-place{
+    font-weight:800;
+    font-size: 25px;
+}
+.logoMainCOntainer{
+    display: flex;
+    flex-direction: column;
+}
+small{
+    /* letter-spacing:2px;
+    letter-spacing:500;
+    letter-spacing:16px; */
+}
+.college-name{
+    font-size:60px;
+    font-weight:800;
+}
+.submenu{
+    padding: 0px 10px;
+}
+.submenu>a{
+    text-decoration: none;
+    color: black;
+}
+.menu-container{
+    font-size: 11px;
+display: flex;
+justify-content: flex-end;
+width: 75%;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 13px 1px;
+}
+.menu{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 20px;
+}
+.menu>a{
+    color: black;
+    text-decoration: none;
+}
+.announcement{
+    background: chartreuse;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 16px;
+    color: white;
+    width: 100%;
+    /* border-radius: 38px 1px 38px 1px; */
+    border-radius: 1px 38px 1px 38px;
+}
+/* navbar css  end */
+/* drop down menu  */
+.dropdownMenu{
+    background: #dd3a3a;
+color: #fff;
+border-radius: 0px;
+}
+.card-img-top{
+    height: 290px;
+}
+.dropdown-item{
+    color: white !important;
+}
+.dropdown-item:hover {
+    color: white !important;
+    background-color: #dd3a3a !important;
+    /* margin-left: 7px; */
+}
+.announce-headding{
+    width:85%
+}
+.announce-margue{
+    width:15%
+}
+.announce-container{
+    margin-top: 10px;
+}
+@media only screen and (max-width: 1020px)
+{
+    .menu{
+        padding: 10px 20px;
+    }
+.main-nav{
+    flex-direction: column;
+    align-items: flex-start;
+    /* width: 80%; */
+    /* background: red; */
+    display: none;
+}
+}
+@media only screen and (max-width: 426px)
+{
+    .menu-container{
+        font-size: 6px;
+    }
+    .announce-margue {
+        width: 41%;
+        font-size: 13px;
+    }
+    .announce-headding{
+        width:59% ;
+    }
+}
