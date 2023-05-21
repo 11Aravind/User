@@ -176,15 +176,24 @@ img {max-width: 100%;}
     padding: 5%;
     /* background-color: #82AAE3; */
 
-
+.college-pic{
+  width:100%
+}
 /* faculty.html */
 .bottom-to-top{
-  width: 47px;
+  /* width: 47px;
   height: 30px;
   position: fixed;
   top: 599px;
   right: 36px;
-  z-index: 100;
+  z-index: 100; */
+  width: 47px;
+    height: 30px;
+    position: fixed;
+    /* top: 599px; */
+    right: 36px;
+    bottom: 35px;
+    z-index: 100;
 }
 
 ul{
@@ -227,7 +236,9 @@ ul>li>a{
 .faculty-box{
   padding: 2%;
 }
+.missionandVision{
 
+}
 /* register */
 
 /* .form-signin{
@@ -360,10 +371,15 @@ ul>li>a{
       /* border-radius: 30px; */
       width: 95%;
    }
+   .missionandVision{
+    flex-direction: column-reverse;
+   }
     }
     @media only screen and (max-width: 536px)
 {
   #info{
     margin:0;
   }
+  
+  
 }
