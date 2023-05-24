@@ -210,8 +210,8 @@ ul>li>a{
   background-color: #dd3a3a;
   /* padding: 3%; */
   color: white;
-  margin-left: -17px;
-  margin-right: -17px;
+  /* margin-left: -17px;
+  margin-right: -17px; */
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
 /* .nav-item{
